@@ -1,0 +1,15 @@
+class SubjectSchedule {
+  String id;
+  String name;
+  List<String> schedule;
+
+  SubjectSchedule({this.id, this.name, this.schedule});
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'schedule': schedule,
+    };
+  }
+}
